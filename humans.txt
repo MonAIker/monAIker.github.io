@@ -1,0 +1,15 @@
+/* CREATOR */
+Creator: herminius
+Title:      monAIker
+Position:   Developer
+Site:       https://monaiker.art
+Description: AI-Driven Images Inspired by Books, Movies, Games, Music, Paint, Anime, etc ...
+Twitter:    
+Location:   
+
+/* SITE */
+Created:     2023/03/10
+Language:    English (EN)
+Standards:   HTML5, CSS3, JS
+Components:  
+Software:    Visual Code
