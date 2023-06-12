@@ -455,6 +455,10 @@ input {
   fill: url(#instagram_sfondo) !important;
 }
 
+#link_github:hover {
+  fill: #ad5c51 !important;
+}
+
 /* Logo */
 
 #logo_box {
@@ -660,6 +664,7 @@ input {
   /* Arrow Top */
 
   #top_box {
+    display: flex;
     position: fixed;
     left: 17.5px;
     bottom: 35px;
