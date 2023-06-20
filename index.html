@@ -159,7 +159,6 @@ MonAIker
         </div>
         <!--fine menu_social-->
         <div id="logo_box" class="flex justify_content_center vertical_center">
-          <a href="#">
             <svg
               id="monaiker_logo"
               class="w100p"
@@ -291,19 +290,55 @@ MonAIker
                 />
               </g>
             </svg>
-          </a>
         </div>
         <!--fine logo-->
       </div>
       <!--fine header-->
     </div>
     <!--fine header_box-->
+    <div id="menu_cornice" class="flex justify_content_center vertical_center">
+      <div id="menu_box">
+        <div
+          id="menu_elements_box"
+          class="flex flex_column justify_content_center vertical_center"
+        >
+          <div class="menu_elements">
+            <h2 class="menu_elements_titolo">Sorting</h2>
+            <ul class="sorting_elements_box">
+              <li class="sorting_element" onclick="filterSelection('all')">
+                Cron
+              </li>
+              <li class="sorting_element" onclick="filterSelection('book')">
+                Books
+              </li>
+              <li class="sorting_element" onclick="filterSelection('movie')">
+                Movie
+              </li>
+              <li class="sorting_element" onclick="filterSelection('serie')">
+                Series
+              </li>
+              <li class="sorting_element" onclick="filterSelection('anime')">
+                Anime
+              </li>
+            </ul>
+          </div>
+          <a href="">
+            <div class="menu_elements">
+              <h2 class="menu_elements_titolo bottone">About</h2>
+            </div>
+          </a>
+        </div>
+        <!--fine menu_elements_box-->
+      </div>
+      <!--fine menu_box-->
+    </div>
+    <!--fine menu_cornice-->
     <div id="galleria_box">
       <div
         id="galleria"
         class="flex flex_column justify_content_between vertical_center"
       >
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -313,7 +348,7 @@ MonAIker
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Serie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -327,7 +362,7 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento book">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -337,7 +372,7 @@ MonAIker
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Books</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Book</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -351,7 +386,7 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento book">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -361,7 +396,7 @@ MonAIker
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Books</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Book</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Animal Farm</h2>
@@ -373,7 +408,7 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento serie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -383,7 +418,7 @@ MonAIker
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Series</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Serie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Black Mirror</h2>
@@ -395,7 +430,7 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento serie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -405,7 +440,7 @@ MonAIker
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Series</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Serie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Fringe</h2>
@@ -417,17 +452,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Pirates of the Caribbean_The Curse of the Black Pearl/242f20e7-969c-4ca9-924d-fdef1f113caf.jpg"
+            src="/img/immagini_create/movie/Pirates of the Caribbean_The Curse of the Black Pearl/242f20e7-969c-4ca9-924d-fdef1f113caf.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -441,17 +476,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/John Wick 4/79bfa223-7e21-43de-bf3d-cec42fdbdfe2.jpg"
+            src="/img/immagini_create/movie/John Wick 4/79bfa223-7e21-43de-bf3d-cec42fdbdfe2.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">John Wick 4</h2>
@@ -463,17 +498,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Uncharted/7e7e9b68-e863-49ba-83ef-de31cedbc254.jpg"
+            src="/img/immagini_create/movie/Uncharted/7e7e9b68-e863-49ba-83ef-de31cedbc254.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Uncharted</h2>
@@ -485,17 +520,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Spiderman-Across the Spider-Verse/a88e63f4-f740-4ba3-9d0e-4ea8e8b8e0f6.jpg"
+            src="/img/immagini_create/movie/Spiderman-Across the Spider-Verse/a88e63f4-f740-4ba3-9d0e-4ea8e8b8e0f6.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -509,17 +544,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/La Grande Bellezza/c2b362f1-3983-42ac-b388-535668737c7b.jpg"
+            src="/img/immagini_create/movie/La Grande Bellezza/c2b362f1-3983-42ac-b388-535668737c7b.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -533,17 +568,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/La Vita è Bella/8780655f-a62a-4032-bdfb-230d41739d40.jpg"
+            src="/img/immagini_create/movie/La Vita è Bella/8780655f-a62a-4032-bdfb-230d41739d40.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">
@@ -557,17 +592,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/James Bond-Goldfinger/6ed54b81-4be3-413c-89ef-43e60ae272ce.jpg"
+            src="/img/immagini_create/movie/James Bond-Goldfinger/6ed54b81-4be3-413c-89ef-43e60ae272ce.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Goldfinger</h2>
@@ -579,17 +614,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Fear and Loathing in Las Vegas/2543787f-cab8-4b75-874c-5fc39458f0fb.jpg"
+            src="/img/immagini_create/movie/Fear and Loathing in Las Vegas/2543787f-cab8-4b75-874c-5fc39458f0fb.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Fear and Loathing in Las Vegas</h2>
@@ -601,17 +636,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Ghost in the Shell/82a2b706-7014-4e7e-813b-d985e970f1e6.jpg"
+            src="/img/immagini_create/movie/Ghost in the Shell/82a2b706-7014-4e7e-813b-d985e970f1e6.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Ghost in the Shell</h2>
@@ -623,17 +658,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/American Psycho/7e5c3634-a492-4d99-96df-ddb8801da9ed.jpg"
+            src="/img/immagini_create/movie/American Psycho/7e5c3634-a492-4d99-96df-ddb8801da9ed.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">American Psycho</h2>
@@ -645,17 +680,17 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento movie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
             class="galleria_elemento_img lazy"
-            src="/img/immagini_create/film/Dog Day Afternoon/9f55377b-c14e-4ddf-9ac9-7ee5ced19b1e.jpg"
+            src="/img/immagini_create/movie/Dog Day Afternoon/9f55377b-c14e-4ddf-9ac9-7ee5ced19b1e.jpg"
             alt=""
           />
 
           <div class="galleria_elemento_descrittore_cornice">
-            <h3 class="galleria_elemento_descrittore_tipo">Film</h3>
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
             <!-- fine galleria_elemento_descrittore_etichetta-->
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo">Dog Day Afternoon</h2>
@@ -667,7 +702,7 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
-        <div class="galleria_elemento">
+        <div class="galleria_elemento anime">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -710,5 +745,43 @@ MonAIker
       <!--fine top_box-->
     </a>
     <!--fine top_box_link-->
+
+    <!--Filtering Img-->
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("galleria_elemento");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "galleria_elemento_filtrato");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "galleria_elemento_filtrato");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        console.log("sorting");
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+    </script>
   </body>
 </html>

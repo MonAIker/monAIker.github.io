@@ -88,6 +88,17 @@ $(document).ready(function () {
     });
 
 
+    /**
+   *
+   * Menu
+   *
+   **/
+
+   $("#logo_box").on("click", function(){
+    $("#menu_cornice").toggleClass("menu_cornice_attivo");
+   }); 
+
+
   window.onscroll = function () {
     headerGhost();
     arrowTop();
