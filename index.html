@@ -303,27 +303,30 @@ MonAIker
           class="flex flex_column justify_content_center vertical_center"
         >
           <div class="menu_elements">
-            <h2 class="menu_elements_titolo">Sorting</h2>
-            <ul class="sorting_elements_box">
-              <li class="sorting_element" onclick="filterSelection('all')">
-                Cron
+            <h2 class="menu_elements_titolo">Filtering</h2>
+            <ul class="filtering_elements_box">
+              <li class="filtering_element" onclick="filterSelection('all')">
+                Cronos
               </li>
-              <li class="sorting_element" onclick="filterSelection('book')">
+              <li class="filtering_element" onclick="filterSelection('book')">
                 Books
               </li>
-              <li class="sorting_element" onclick="filterSelection('movie')">
+              <li class="filtering_element" onclick="filterSelection('movie')">
                 Movie
               </li>
-              <li class="sorting_element" onclick="filterSelection('serie')">
+              <li class="filtering_element" onclick="filterSelection('music')">
+                Music
+              </li>
+              <li class="filtering_element" onclick="filterSelection('serie')">
                 Series
               </li>
-              <li class="sorting_element" onclick="filterSelection('anime')">
+              <li class="filtering_element" onclick="filterSelection('anime')">
                 Anime
               </li>
             </ul>
           </div>
           <a href="">
-            <div class="menu_elements">
+            <div id="menu_element_about" class="menu_elements">
               <h2 class="menu_elements_titolo bottone">About</h2>
             </div>
           </a>
@@ -338,7 +341,7 @@ MonAIker
         id="galleria"
         class="flex flex_column justify_content_between vertical_center"
       >
-        <div class="galleria_elemento movie">
+        <div class="galleria_elemento serie">
           <div class="galleria_elemento_bottone"></div>
           <!--fine galleria_elemento_bottone-->
           <img
@@ -724,6 +727,28 @@ MonAIker
         </div>
         <!--fine galleria_elemento-->
 
+        <div class="galleria_elemento music">
+          <div class="galleria_elemento_bottone"></div>
+          <!--fine galleria_elemento_bottone-->
+          <img
+            class="galleria_elemento_img lazy"
+            src="/img/immagini_create/music/The Dark Side of the Moon/e355bc0d-757f-4525-ba16-f72cc530bcf7.jpg"
+            alt=""
+          />
+
+          <div class="galleria_elemento_descrittore_cornice">
+            <h3 class="galleria_elemento_descrittore_tipo">Music</h3>
+            <!-- fine galleria_elemento_descrittore_etichetta-->
+            <div class="galleria_elemento_descrittore_box">
+              <h2 class="galleria_elemento_descrittore_titolo">The Dark Side of the Moon</h2>
+              <div class="galleria_elemento_descrittore"></div>
+            </div>
+            <!--fine galleria_elemento_descrittore-->
+          </div>
+          <!--fine galleria_elemento_descrittore_box-->
+        </div>
+        <!--fine galleria_elemento-->
+
 
       </div>
       <!--fine galleria_box-->
@@ -760,7 +785,6 @@ MonAIker
       }
 
       function w3AddClass(element, name) {
-        console.log("sorting");
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
