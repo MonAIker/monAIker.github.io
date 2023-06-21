@@ -488,7 +488,7 @@ input {
   position: fixed;
   width: 100vw;
   height: calc(100% - 90px);
-  top: 70px;
+  top: 80px;
   transform: translateX(-150%);
   transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
   z-index: 8;
