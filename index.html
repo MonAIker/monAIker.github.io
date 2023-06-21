@@ -775,6 +775,8 @@ MonAIker
     <script>
       filterSelection("all");
       function filterSelection(c) {
+        $("#menu_cornice").removeClass("menu_cornice_attivo");
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
         var x, i;
         x = document.getElementsByClassName("galleria_elemento");
         if (c == "all") c = "";
