@@ -557,6 +557,7 @@ input {
   margin: 2rem 0;
   padding: 1rem;
   font-family: "alkatraregular";
+  border: 1px solid var(--colore_azzurro);
   border-radius: 3px;
   cursor: pointer;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
@@ -565,8 +566,6 @@ input {
 .filtering_element:hover {
   background-color: var(--colore_bianco);
   color: var(--colore_azzurro);
-  border: 1px solid var(--colore_azzurro);
-  margin: calc(2rem - 1px) 0;
 }
 
 /*
