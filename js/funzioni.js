@@ -94,7 +94,8 @@ $(document).ready(function () {
    *
    **/
 
-   $("#logo_box").on("click", function(){
+   $("#menu_hamburger_box").on("click", function(){
+    $("#menu_hamburger_box").toggleClass("menu_hamburger_attivo");
     $("#menu_cornice").toggleClass("menu_cornice_attivo");
    }); 
 
