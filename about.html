@@ -169,18 +169,36 @@ MonAIker About
             viewBox="0 0 200 200"
           >
             <g stroke-width="6.5" stroke-linecap="round">
-              <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" />
               <path
+                class="menu_hamburger_svg_path"
+                d="M72 82.286h28.75"
+                fill-rule="evenodd"
+              />
+              <path
+                class="menu_hamburger_svg_path"
                 d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
                 fill="none"
               />
-              <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" />
               <path
+                class="menu_hamburger_svg_path"
+                d="M72 125.143h28.75"
+                fill-rule="evenodd"
+              />
+              <path
+                class="menu_hamburger_svg_path"
                 d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
                 fill="none"
               />
-              <path d="M100.75 82.286h28.75" fill-rule="evenodd" />
-              <path d="M100.75 125.143h28.75" fill-rule="evenodd" />
+              <path
+                class="menu_hamburger_svg_path"
+                d="M100.75 82.286h28.75"
+                fill-rule="evenodd"
+              />
+              <path
+                class="menu_hamburger_svg_path"
+                d="M100.75 125.143h28.75"
+                fill-rule="evenodd"
+              />
             </g>
           </svg>
         </div>
@@ -335,31 +353,19 @@ MonAIker About
           class="flex flex_column justify_content_center vertical_center"
         >
           <div class="menu_elements">
-            <h2 class="menu_elements_titolo">Filtering</h2>
+            <h2 class="menu_elements_titolo">About</h2>
             <ul class="filtering_elements_box">
-              <li class="filtering_element" onclick="filterSelection('all')">
-                Cronos
-              </li>
-              <li class="filtering_element" onclick="filterSelection('book')">
-                Books
-              </li>
-              <li class="filtering_element" onclick="filterSelection('movie')">
-                Movie
-              </li>
-              <li class="filtering_element" onclick="filterSelection('music')">
-                Music
-              </li>
-              <li class="filtering_element" onclick="filterSelection('serie')">
-                Series
-              </li>
-              <li class="filtering_element" onclick="filterSelection('anime')">
-                Anime
-              </li>
+              <a href="#about monaiker_definition" class="about_link_element">
+                <li class="menu_elements_element">Description</li>
+              </a>
+              <a href="#about monaiker_vision" class="about_link_element">
+              <li class="menu_elements_element">Vision</li>
+              </a>
             </ul>
           </div>
-          <a href="/about.html">
+          <a href="/index.html">
             <div id="menu_element_about" class="menu_elements">
-              <h2 class="menu_elements_titolo bottone">About</h2>
+              <h2 class="menu_elements_titolo bottone">Home</h2>
             </div>
           </a>
         </div>
@@ -369,18 +375,24 @@ MonAIker About
     </div>
     <!--fine menu_cornice-->
     <div class="right_side_box">
-      <div id="about_box"
-        class="right_side"
-      >
-      <div id="about" class="flex flex_column vertical_center">
-        <h1 id="about_title">About</h1>
-        <h2 class="about_sub txt_nero">AI-Driven Images Inspired by Books, Movies, Games, Music, Paint, Anime, etc ... 🤖</h2>
-        <h2 class="about_sub txt_azzurro">What future will be reserved for human creativity if it is pitted against an artificial intelligence?</h2>
-        <h1 class="about_txt">
-          <span class="txt_azzurro">Monaiker</span> purports to try to keep track of the evolution of AI's interpretive mode for future comparison,highlighting qualitative characteristic traits 
-        </h1>
-      </div>
-      <!--fine about-->
+      <div id="about_box" class="right_side">
+        <div id="about" class="flex flex_column vertical_center">
+          <h1 id="about_title">About</h1>
+          <h2 id="about monaiker_definition" class="about_sub txt_nero">
+            AI-Driven Images Inspired by Books, Movies, Games, Music, Paint,
+            Anime, etc ... 🤖
+          </h2>
+          <h2 class="about_sub txt_azzurro">
+            What future will be reserved for human creativity if it is pitted
+            against an artificial intelligence?
+          </h2>
+          <h1 id="about_monaiker_vision" class="about_txt">
+            <span class="txt_azzurro">Monaiker</span> purports to try to keep
+            track of the evolution of AI's interpretive mode for future
+            comparison,highlighting qualitative characteristic traits
+          </h1>
+        </div>
+        <!--fine about-->
       </div>
       <!--fine right_side-->
     </div>
@@ -407,6 +419,7 @@ MonAIker About
       filterSelection("all");
       function filterSelection(c) {
         $("#menu_cornice").removeClass("menu_cornice_attivo");
+        $("#menu_hamburger_box").removeClass("menu_hamburger_attivo");
         $("html, body").animate({ scrollTop: 0 }, "fast");
         var x, i;
         x = document.getElementsByClassName("galleria_elemento");

@@ -5,6 +5,12 @@
 |*
 */
 
+  /**
+   *
+   * Elementi Galleria
+   *
+   **/
+
 $(document).ready(function () {
   var galleria_elemento_bottone_lista = document.querySelectorAll(
     ".galleria_elemento_bottone"
@@ -71,7 +77,7 @@ $(document).ready(function () {
   }
 
 
-    /**
+  /**
    *
    * Lazy
    *
@@ -88,7 +94,7 @@ $(document).ready(function () {
     });
 
 
-    /**
+  /**
    *
    * Menu
    *
@@ -98,6 +104,11 @@ $(document).ready(function () {
     $("#menu_hamburger_box").toggleClass("menu_hamburger_attivo");
     $("#menu_cornice").toggleClass("menu_cornice_attivo");
    }); 
+
+   $(".about_link_element").click(function(){
+    $("#menu_hamburger_box").toggleClass("menu_hamburger_attivo");
+    $("#menu_cornice").toggleClass("menu_cornice_attivo");
+   });
 
 
   window.onscroll = function () {

@@ -169,18 +169,18 @@ MonAIker
             viewBox="0 0 200 200"
           >
             <g stroke-width="6.5" stroke-linecap="round">
-              <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" />
-              <path
+              <path class="menu_hamburger_svg_path" d="M72 82.286h28.75" fill-rule="evenodd" />
+              <path class="menu_hamburger_svg_path"
                 d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
                 fill="none"
               />
-              <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" />
-              <path
+              <path class="menu_hamburger_svg_path" d="M72 125.143h28.75" fill-rule="evenodd" />
+              <path class="menu_hamburger_svg_path"
                 d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
                 fill="none"
               />
-              <path d="M100.75 82.286h28.75" fill-rule="evenodd" />
-              <path d="M100.75 125.143h28.75" fill-rule="evenodd" />
+              <path class="menu_hamburger_svg_path" d="M100.75 82.286h28.75" fill-rule="evenodd" />
+              <path class="menu_hamburger_svg_path" d="M100.75 125.143h28.75" fill-rule="evenodd" />
             </g>
           </svg>
         </div>
@@ -337,22 +337,22 @@ MonAIker
           <div class="menu_elements">
             <h2 class="menu_elements_titolo">Filtering</h2>
             <ul class="filtering_elements_box">
-              <li class="filtering_element" onclick="filterSelection('all')">
+              <li class="menu_elements_element" onclick="filterSelection('all')">
                 Cronos
               </li>
-              <li class="filtering_element" onclick="filterSelection('book')">
+              <li class="menu_elements_element" onclick="filterSelection('book')">
                 Books
               </li>
-              <li class="filtering_element" onclick="filterSelection('movie')">
+              <li class="menu_elements_element" onclick="filterSelection('movie')">
                 Movie
               </li>
-              <li class="filtering_element" onclick="filterSelection('music')">
+              <li class="menu_elements_element" onclick="filterSelection('music')">
                 Music
               </li>
-              <li class="filtering_element" onclick="filterSelection('serie')">
+              <li class="menu_elements_element" onclick="filterSelection('serie')">
                 Series
               </li>
-              <li class="filtering_element" onclick="filterSelection('anime')">
+              <li class="menu_elements_element" onclick="filterSelection('anime')">
                 Anime
               </li>
             </ul>
@@ -1122,6 +1122,7 @@ MonAIker
       filterSelection("all");
       function filterSelection(c) {
         $("#menu_cornice").removeClass("menu_cornice_attivo");
+        $("#menu_hamburger_box").removeClass("menu_hamburger_attivo");
         $("html, body").animate({ scrollTop: 0 }, "fast");
         var x, i;
         x = document.getElementsByClassName("galleria_elemento");
