@@ -771,6 +771,7 @@ input {
 }
 
 .about_txt {
+  text-align: center;
 }
 
 /** Arrow Top **/
@@ -832,6 +833,17 @@ input {
 /**
 * media
 **/
+
+/** Exception in flow for Galaxy Fold */
+
+@media screen and (max-width: 281px){
+   /* Menu */
+   #menu_social_box{
+    display: none;
+   }
+}
+
+
 
 @media screen and (min-width: 912px) {
   #header_box {
