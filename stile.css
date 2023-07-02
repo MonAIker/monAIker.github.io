@@ -444,6 +444,10 @@ input {
 
 /*Menu_Social*/
 
+#menu_social_box{
+  display: none;
+ }
+
 .elemento_link_box {
   margin-right: 1.7rem;
 }
@@ -774,6 +778,14 @@ input {
   text-align: center;
 }
 
+#menu_social_box_about{
+  position: absolute;
+  left: 50%;
+  bottom:7%;
+  transform: translate(-50%);
+  z-index: 9;
+}
+
 /** Arrow Top **/
 
 #top_box {
@@ -834,11 +846,15 @@ input {
 * media
 **/
 
-/** Exception in flow for Galaxy Fold */
+/** Galaxy Fold */
 
-@media screen and (max-width: 281px){
-   /* Menu */
-   #menu_social_box{
+@media screen and (min-width: 281px){
+  /* Menu */
+  #menu_social_box{
+   display: flex;
+  }
+
+  #menu_social_box_about{
     display: none;
    }
 }
