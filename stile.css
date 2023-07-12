@@ -637,6 +637,7 @@ input {
   color: var(--colore_bianco);
   margin: 2rem 0;
   padding: 1rem;
+  text-align: center;
   border: 1px solid var(--colore_azzurro);
   border-radius: 3px;
   cursor: pointer;
@@ -777,6 +778,10 @@ input {
   bottom:7%;
   transform: translate(-50%);
   z-index: 9;
+}
+
+#about_symbol{
+  border-radius: 50px;
 }
 
 /** Arrow Top **/
@@ -930,6 +935,16 @@ input {
   #top_box:hover #top_arrow {
     fill: var(--colore_nero);
   }
+
+
+  /**
+  * About Page
+  **/
+
+  #about_monaiker_vision{
+    max-width: 80%;
+  }
+
 }
 
 @media (min-width: 768px) {
