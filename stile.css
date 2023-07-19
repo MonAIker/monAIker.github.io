@@ -444,9 +444,9 @@ input {
 
 /*Menu_Social*/
 
-#menu_social_box{
+#menu_social_box {
   display: none;
- }
+}
 
 .elemento_link_box {
   margin-right: 1.7rem;
@@ -589,8 +589,9 @@ input {
 
 #menu_box {
   width: 83.7vw;
-  height: 90%;
-  padding-top: 80px;
+  height: 60%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: var(--colore_bianco);
   border: 3px solid var(--colore_azzurro);
   border-radius: 30px;
@@ -602,8 +603,6 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
 }
 
 .menu_elements_titolo {
@@ -771,18 +770,18 @@ input {
 .about_txt {
   font-size: 2rem;
   font-weight: bold;
-  text-align:justify;
+  text-align: justify;
 }
 
-#menu_social_box_about{
+#menu_social_box_about {
   position: absolute;
   left: 50%;
-  bottom:7%;
+  bottom: 7%;
   transform: translate(-50%);
   z-index: 9;
 }
 
-#about_symbol{
+#about_symbol {
   border-radius: 50px;
 }
 
@@ -848,18 +847,16 @@ input {
 
 /** Galaxy Fold */
 
-@media screen and (min-width: 281px){
+@media screen and (min-width: 281px) {
   /* Menu */
-  #menu_social_box{
-   display: flex;
+  #menu_social_box {
+    display: flex;
   }
 
-  #menu_social_box_about{
+  #menu_social_box_about {
     display: none;
-   }
+  }
 }
-
-
 
 @media screen and (min-width: 912px) {
   #header_box {
@@ -894,13 +891,18 @@ input {
     transform: translateX(150%);
   }
 
+  #menu_box {
+    width: 53.7vw;
+    height: 60%;
+  }
+
+  /* Galleria */
+
   .right_side_box {
     width: calc(100vw - 70px);
     margin-top: 0;
     margin-left: 70px;
   }
-
-  /* Galleria */
 
   .galleria_elemento_descrittore_tipo {
     top: 1.7%;
@@ -938,15 +940,13 @@ input {
     fill: var(--colore_nero);
   }
 
-
   /**
   * About Page
   **/
 
-  #about_monaiker_vision{
+  #about_monaiker_vision {
     max-width: 80%;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -959,4 +959,16 @@ input {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+}
+
+/**
+* Height
+**/
+
+@media screen and (max-height: 777px) and (orientation: landscape)  {
+  #menu_box {
+    padding-top:9rem;
+    padding-bottom: 9rem;
+  }
+  
 }

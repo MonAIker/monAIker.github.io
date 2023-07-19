@@ -5,11 +5,11 @@
 |*
 */
 
-  /**
-   *
-   * Elementi Galleria
-   *
-   **/
+/**
+ *
+ * Elementi Galleria
+ *
+ **/
 
 $(document).ready(function () {
   var galleria_elemento_bottone_lista = document.querySelectorAll(
@@ -32,9 +32,9 @@ $(document).ready(function () {
   }
 
   /**
-   * 
+   *
    *  Scroll
-   * 
+   *
    **/
 
   var scrollPos = window.scrollY;
@@ -47,18 +47,14 @@ $(document).ready(function () {
     if (x_mobile.matches) {
       if (scrollPos >= currentScrollPos) {
         if (currentScrollPos < 70) {
-          $("#header_box").removeClass(
-            "header_box_scrollato"
-          );
+          $("#header_box").removeClass("header_box_scrollato");
         } else {
           document.getElementById("header_box").style.top = "0";
           $("#header_box").addClass("header_box_scrollato");
         }
       } else {
         document.getElementById("header_box").style.top = "-70px";
-        $("#header_box").removeClass(
-          "header_box_scrollato"
-        );
+        $("#header_box").removeClass("header_box_scrollato");
       }
       scrollPos = currentScrollPos;
     }
@@ -76,23 +72,21 @@ $(document).ready(function () {
     }
   }
 
-
   /**
    *
    * Lazy
    *
    **/
 
-    $(".lazy").lazy({
-      scrollDirection: "vertical",
-      effect: "fadeIn",
-      effectTime: 2000,
-      visibleOnly: true,
-      onError: function (element) {
-        console.log("error loading " + element.data("src"));
-      },
-    });
-
+  $(".lazy").lazy({
+    scrollDirection: "vertical",
+    effect: "fadeIn",
+    effectTime: 2000,
+    visibleOnly: true,
+    onError: function (element) {
+      console.log("error loading " + element.data("src"));
+    },
+  });
 
   /**
    *
@@ -100,16 +94,16 @@ $(document).ready(function () {
    *
    **/
 
-   $("#menu_hamburger_box").on("click", function(){
+  $("#menu_hamburger_box").on("click", function () {
     $("#menu_hamburger_box").toggleClass("menu_hamburger_attivo");
     $("#menu_cornice").toggleClass("menu_cornice_attivo");
-   }); 
+  });
 
-   $(".about_link_element").click(function(){
+  $("#menu_cornice").click(function (e) {
+    if (e.target !== e.currentTarget) return;
     $("#menu_hamburger_box").toggleClass("menu_hamburger_attivo");
     $("#menu_cornice").toggleClass("menu_cornice_attivo");
-   });
-
+  });
 
   window.onscroll = function () {
     headerGhost();
