@@ -573,9 +573,10 @@ input {
 
 #menu_cornice {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: calc(100% - 90px);
-  top: 80px;
+  height: 100%;
   transform: translateX(-150%);
   transition: cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
   z-index: 8;
@@ -587,8 +588,9 @@ input {
 }
 
 #menu_box {
-  width: 93.7vw;
-  height: 98%;
+  width: 83.7vw;
+  height: 90%;
+  padding-top: 80px;
   background-color: var(--colore_bianco);
   border: 3px solid var(--colore_azzurro);
   border-radius: 30px;
