@@ -588,11 +588,10 @@ input {
 }
 
 #menu_box {
-  width: 83.7vw;
-  height: 70%;
   margin-top: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   background-color: var(--colore_bianco);
   border: 3px solid var(--colore_azzurro);
   border-radius: 30px;
@@ -620,19 +619,14 @@ input {
   position: relative;
 }
 
-/*
-#menu_element_about::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(25deg);
-  width: 5px;
-  height: 100%;
-  background-color: purple;
-}*/
-
 /*Filtering*/
+
+.filtering_elements_box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  font-size: 2rem;
+}
 
 .menu_elements_element {
   background-color: var(--colore_azzurro);
@@ -886,16 +880,13 @@ input {
 
   #menu_cornice {
     width: calc(100vw - 70px);
-    height: 100%;
-    top: 0;
     left: 70px;
-    transform: translateX(150%);
+    justify-content: end;
   }
 
   #menu_box {
-    width: 53.7vw;
-    height: 60%;
     margin-top: 0;
+    margin-right: 3rem;
   }
 
   /* Galleria */
@@ -960,6 +951,13 @@ input {
 @media (min-width: 1280px) {
 }
 
+@media (min-width: 1520px) {
+  .menu_sections_box {
+    flex-direction: row;
+    gap: 14rem;
+  }
+}
+
 @media screen and (max-width: 768px) and (orientation: landscape) {
 }
 
@@ -967,10 +965,9 @@ input {
 * Height
 **/
 
-@media screen and (max-height: 777px) and (orientation: landscape)  {
+@media screen and (max-height: 777px) and (orientation: landscape) {
   #menu_box {
-    padding-top:9rem;
+    padding-top: 9rem;
     padding-bottom: 9rem;
   }
-  
 }

@@ -353,10 +353,9 @@ MonAIker
         class="flex justify_content_center vertical_center txt_center"
       >
         <div
-          id="menu_elements_box"
-          class="flex flex_column justify_content_center vertical_center"
+          class="menu_sections_box flex flex_column justify_content_center vertical_center"
         >
-          <div class="menu_elements">
+          <div class="menu_filtering_box">
             <h2 class="menu_elements_titolo txt_center">Filtering</h2>
             <ul class="filtering_elements_box txt_center">
               <li
@@ -384,11 +383,11 @@ MonAIker
                 Music
               </li>
               <li
-              class="menu_elements_element"
-              onclick="filterSelection('opera')"
-            >
-              Opera
-            </li>
+                class="menu_elements_element"
+                onclick="filterSelection('opera')"
+              >
+                Opera
+              </li>
               <li
                 class="menu_elements_element"
                 onclick="filterSelection('serie')"
@@ -401,15 +400,22 @@ MonAIker
               >
                 Anime
               </li>
+              <li
+                class="menu_elements_element"
+                onclick="filterSelection('games')"
+              >
+                Games
+              </li>
             </ul>
           </div>
-          <a href="/about.html" target="_blank">
-            <div id="menu_element_about" class="menu_elements">
-              <h2 class="menu_elements_titolo bottone">About</h2>
-            </div>
-          </a>
+          <div class="menu_pages_box">
+            <a href="/about.html" target="_blank">
+              <div id="menu_element_about" class="menu_elements">
+                <h2 class="menu_elements_titolo bottone">About</h2>
+              </div>
+            </a>
+          </div>
         </div>
-        <!--fine menu_elements_box-->
       </div>
       <!--fine menu_box-->
     </div>
@@ -1610,6 +1616,30 @@ MonAIker
             <div class="galleria_elemento_descrittore_box">
               <h2 class="galleria_elemento_descrittore_titolo txt_center">
                 The Machinist
+              </h2>
+              <div class="galleria_elemento_descrittore"></div>
+            </div>
+            <!--fine galleria_elemento_descrittore-->
+          </div>
+          <!--fine galleria_elemento_descrittore_box-->
+        </div>
+        <!--fine galleria_elemento-->
+
+        <div class="galleria_elemento movie">
+          <div class="galleria_elemento_bottone"></div>
+          <!--fine galleria_elemento_bottone-->
+          <img
+            class="galleria_elemento_img lazy"
+            src="/img/immagini_create/movie/Det sjunde inseglet/ilSettimoSigillo.png"
+            alt=""
+          />
+
+          <div class="galleria_elemento_descrittore_cornice">
+            <h3 class="galleria_elemento_descrittore_tipo">Movie</h3>
+            <!-- fine galleria_elemento_descrittore_etichetta-->
+            <div class="galleria_elemento_descrittore_box">
+              <h2 class="galleria_elemento_descrittore_titolo txt_center">
+                Det Sjunde Inseglet
               </h2>
               <div class="galleria_elemento_descrittore"></div>
             </div>
