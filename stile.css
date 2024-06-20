@@ -740,6 +740,13 @@ input {
   color: var(--colore_azzurro);
 }
 
+.galleria_elemento_descrittore_sottotitolo {
+  font-size: 3rem;
+  color: var(--colore_bianco);
+  -webkit-text-stroke-width: 0.07px;
+  -webkit-text-stroke-color: var(--colore_nero);
+}
+
 /*
 *
 * About Page
