@@ -686,6 +686,10 @@ input {
   cursor: pointer;
 }
 
+.galleria_elemento_bottone_726h{
+  height: 4.23% !important;
+}
+
 .galleria_elemento_bottone:hover {
   transform: scale(1.1);
 }
