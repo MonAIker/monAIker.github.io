@@ -631,7 +631,7 @@ input {
 .menu_elements_element {
   background-color: var(--colore_azzurro);
   color: var(--colore_bianco);
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 1rem;
   text-align: center;
   border: 1px solid var(--colore_azzurro);
@@ -686,7 +686,7 @@ input {
   cursor: pointer;
 }
 
-.galleria_elemento_bottone_726h{
+.galleria_elemento_bottone_726h {
   height: 4.23% !important;
 }
 
@@ -899,6 +899,12 @@ input {
   #menu_box {
     margin-top: 0;
     margin-right: 3rem;
+  }
+
+  /* Filtering */
+
+  .filtering_elements_box {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   /* Galleria */
